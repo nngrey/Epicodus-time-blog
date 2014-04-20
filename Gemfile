@@ -11,6 +11,8 @@ gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'rghost'
 gem 'bcrypt'
 gem 'devise'
+gem 'actionpack-page_caching'
+gem 'local_time'
  
 group :development do
   gem 'better_errors'
