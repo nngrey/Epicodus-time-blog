@@ -1,0 +1,9 @@
+<h1><%= @post.title %></h1>
+<h3> by <%= @post.author %></h3>
+<p><%= @post.content %></p>
+
+<p><%= link_to "Edit Property", edit_post_path(@post), :class => "btn btn-primary" %></p>
+<p><%= link_to "Delete Property", post_path(@post),
+                            data: { confirm: 'You sure?' },
+                            method: "delete",
+                            :class => "btn btn-danger" %></p>

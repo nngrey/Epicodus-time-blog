@@ -1,0 +1,9 @@
+<h1>Blog</h1>
+
+
+<% @posts.each do |post| %>
+	<h3><%= link_to post.title, post_path(post) %></h3> 
+	by <strong><em><%= post.author %></em></strong><br>
+	posted <%= time_ago_in_words(post.created_at) %> ago (relative time) <br>
+	posted <%= local_time_ago(post.created_at) %> (when cached)
+<% end %>
